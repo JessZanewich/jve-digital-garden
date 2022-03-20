@@ -1,12 +1,30 @@
 import Link from 'next/link';
+import siteConfig from '../../site.config';
+import { Logo, LogoImage, LogoName, Nav, NavList, NavItem } from './styles';
 
 const Header = () => {
   return (
-    // header value
     <header className="py-2">
-      <Link href="/">
-        <a className="text-2xl font-bold text-green-500">My Simple Blog App</a>
-      </Link>
+      <Nav>
+        <Link href="/" passHref>
+          <Logo>
+            <LogoImage>🌱</LogoImage>
+            <LogoName>{siteConfig.author}</LogoName>
+          </Logo>
+        </Link>
+        <NavList>
+          <NavItem>
+            <Link href="/garden" passHref>
+              Digital Garden
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link href="/about" passHref>
+              About
+            </Link>
+          </NavItem>
+        </NavList>
+      </Nav>
     </header>
   );
 };

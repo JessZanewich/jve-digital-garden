@@ -4,8 +4,8 @@ export const lightTheme: DefaultTheme = {
   borderRadius: '5px',
 
   colors: {
-    main: 'cyan',
-    secondary: 'magenta',
+    main: '#F0F7F4',
+    secondary: '#70ABAF',
   },
 };
 
@@ -13,8 +13,8 @@ export const darkTheme = {
   borderRadius: '5px',
 
   colors: {
-    main: 'black',
-    secondary: 'red',
+    main: '#32292F',
+    secondary: '#99E1D9',
   },
 };
 

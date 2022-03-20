@@ -15,11 +15,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <button onClick={toggleTheme}>Switch Theme</button>
       <Layout>
-        <div>COlors are here</div>
         <Component {...pageProps} />
       </Layout>
+      <button onClick={toggleTheme}>Switch Theme</button>
     </ThemeProvider>
   );
 }
