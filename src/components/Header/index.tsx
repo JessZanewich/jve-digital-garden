@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import siteConfig from '../../../site.config';
-import { Logo, LogoImage, LogoName, Nav, NavList, NavItem } from './styles';
+import Burger from '../Burger';
+import { Logo, LogoImage, LogoName, Nav } from './Header.styles';
 
 const Header = () => {
   return (
@@ -12,18 +13,7 @@ const Header = () => {
             <LogoName>{siteConfig.author}</LogoName>
           </Logo>
         </Link>
-        <NavList>
-          <NavItem>
-            <Link href="/garden" passHref>
-              Digital Garden
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link href="/about" passHref>
-              About
-            </Link>
-          </NavItem>
-        </NavList>
+        <Burger />
       </Nav>
     </header>
   );
