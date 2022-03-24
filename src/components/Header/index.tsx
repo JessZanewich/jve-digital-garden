@@ -5,7 +5,7 @@ import { Logo, LogoImage, LogoName, Nav } from './Header.styles';
 
 const Header = () => {
   return (
-    <header className="py-2">
+    <header>
       <Nav>
         <Link href="/" passHref>
           <Logo>

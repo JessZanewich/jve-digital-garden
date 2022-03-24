@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import Layout from '../components/Layout';
 import { lightTheme, darkTheme, defaultTheme, GlobalStyles } from '../Theme';
 import '../styles/globals.css';
+import Hero from '../components/Hero';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = useState('light');
